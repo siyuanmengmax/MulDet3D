@@ -25,7 +25,7 @@ from tqdm import tqdm
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
-from src.muldet3d.background_model import build_background, detect_foreground
+from src.preprocessing.background_model import build_background, detect_foreground
 from src.utils.io import ensure_directory, read_bin, transform_pcd, write_bin
 
 

@@ -71,10 +71,9 @@ Numbers above use the paper's "Case 3" MOPSO configuration (separation-optimized
 ```
 MulDet3D/
 ├── src/
-│   ├── muldet3d/          # background_model.py: reliability model + background modeling/detection
-│   ├── detection/         # clustering.py (Stage 1/2 + DBSCAN/HDBSCAN baselines), classifying.py, compute_bbox.py
+│   ├── detection/         # clustering.py (Stage 1/2 + DBSCAN/HDBSCAN baselines), classifying.py, compute_bbox.py -- the MulDet3D algorithm itself
 │   ├── algorithms/        # mopso.py: Multi-Objective Particle Swarm Optimization
-│   ├── preprocessing/     # registration, ground-plane fitting, time alignment, PCAP conversion
+│   ├── preprocessing/     # background_model.py (reliability model, shared with FRGB3D), registration, ground-plane fitting, time alignment, PCAP conversion
 │   └── utils/             # I/O and visualization helpers
 ├── scripts/
 │   ├── run_preprocessing.py       # Dual-sensor background removal + fusion
