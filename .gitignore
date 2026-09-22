@@ -1,0 +1,27 @@
+# Data and generated outputs
+bin/
+pcap/
+data/
+results/
+*.bin
+*.pcap
+*.npy
+*.mp4
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
