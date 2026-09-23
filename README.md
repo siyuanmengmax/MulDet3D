@@ -155,9 +155,17 @@ per-method detection CSVs (see each script's `--help`).
 The full raw dataset (LiDAR PCAP captures) is too large for GitHub. The
 curated benchmark used for all reported numbers -- 1,000 manually annotated
 frames each for Lowell and Amherst, fused/registered and ready to run
-through `run_detection.py` (~17.6 GB total) -- is available at: **[Zenodo
-link -- to be added]**. Full raw data is available from the authors upon
-reasonable request.
+through `run_detection.py` (~17.6 GB total) -- is available on Zenodo:
+
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22896184-blue)](https://doi.org/10.5281/zenodo.22896184)
+Lowell dataset (also used by [FRGB3D](https://github.com/siyuanmengmax/FRGB3D))
+
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22896192-blue)](https://doi.org/10.5281/zenodo.22896192)
+Amherst dataset
+
+Each archive is split into several parts to accommodate upload limits; see
+the dataset's own README for reassembly instructions. Full raw data is
+available from the authors upon reasonable request.
 
 ## Citation
 
@@ -174,6 +182,26 @@ If you use this code or method, please cite:
   year    = {2026},
   publisher = {ASCE},
   doi     = {10.1061/JTEPBS.TEENG-9741},
+}
+```
+
+If you use the benchmark datasets, please also cite:
+
+```bibtex
+@dataset{meng_lowell_benchmark,
+  title   = {Lowell Dual-LiDAR Roadside Benchmark: 1,000 Annotated Frames},
+  author  = {Meng, Siyuan and Parashar, Pravar and Yang, Yu-Min and Ai, Chengbo},
+  year    = {2026},
+  publisher = {Zenodo},
+  doi     = {10.5281/zenodo.22896184},
+}
+
+@dataset{meng_amherst_benchmark,
+  title   = {Amherst Dual-LiDAR Roadside Benchmark: 1,000 Annotated Frames},
+  author  = {Meng, Siyuan and Zhang, Yanan and Raucci, David and Ai, Chengbo},
+  year    = {2026},
+  publisher = {Zenodo},
+  doi     = {10.5281/zenodo.22896192},
 }
 ```
 
